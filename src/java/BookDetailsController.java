@@ -13,6 +13,8 @@ import store.Store;
  * @version 1.0
  *
  */
+
+//this is BookDetailsController class
 public class BookDetailsController extends HttpServlet {
     
     public void doPost (HttpServletRequest request, HttpServletResponse response)
