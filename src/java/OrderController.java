@@ -14,6 +14,8 @@ import store.Store;
  * @version 1.0
  *
  */
+
+//This is the order controller class
 public class OrderController extends HttpServlet {
     
     public void doPost (HttpServletRequest request, HttpServletResponse response)
