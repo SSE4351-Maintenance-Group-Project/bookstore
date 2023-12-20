@@ -12,6 +12,8 @@ import store.BookSet;
  * @version 1.0
  *
  */
+
+//This is Increase Quantity Controller class
 public class IncreaseQuantityController extends HttpServlet {
     
     public void doPost (HttpServletRequest request, HttpServletResponse response)
