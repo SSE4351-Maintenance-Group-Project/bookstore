@@ -10,11 +10,11 @@ public class Book {
      
     private String isbn;	        // book's ISBN
     private String title;	        // book's title
-    private String description;	    // book's description
-    private String publisher;	    // book's publisher
-    private String publicationDate;     // book's publication date
-    private String bookType;        // book's type
-    private float price;            // book's price
+    private String description;      // book's description
+    private String publisher;        // book's publisher
+    private String publicationDate;  // book's publication date
+    private String bookType;         // book's type
+    private float price;             // book's price
     
     private int quantity; // book's quantity (for cart and orders)
     
