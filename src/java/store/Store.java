@@ -149,7 +149,7 @@ public class Store {
             throws Exception {
         
         String categories = "";
-        String query = "SELECT category_name FROM BOOKCATEGORIES WHERE isbn = '" + isbn + "'"; //maintained by yus
+        //String query = "SELECT category_name FROM BOOKCATEGORIES WHERE isbn = '" + isbn + "'"; //maintained by yus
         
         
 
