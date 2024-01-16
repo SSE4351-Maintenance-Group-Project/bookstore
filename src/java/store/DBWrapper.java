@@ -1,7 +1,6 @@
 package store;
 import java.sql.*;
 import java.io.*;
-import java.util.StringTokenizer;
 import java.util.Properties;
 import java.util.Random;
 
