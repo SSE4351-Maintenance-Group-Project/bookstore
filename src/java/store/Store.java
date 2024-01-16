@@ -150,8 +150,7 @@ public class Store {
         
         String categories = "";
         String query = "SELECT category_name FROM BOOKCATEGORIES WHERE isbn = '" + isbn + "'"; //maintained by yus
-        ResultSet result = myConnection.runQuery(query);
-        String countQuery = "SELECT COUNT(isbn) AS num FROM BOOKCATEGORIES WHERE isbn ='" + isbn + "'";
+        
         
 
         count.next();
@@ -276,7 +275,6 @@ public class Store {
     public void signupCustomer(String email, String password) 
             throws Exception {
         
-        String query = "INSERT INTO CUSTOMERS VALUES ('" + email + "', '" + password + "')";
         
     }
     
@@ -304,19 +302,11 @@ public class Store {
             orderCost += 5.0;
         }
         
-        String orderQuery = "INSERT INTO ORDERS VALUES "
-                + "(nextval('order_numbers'), '"+email+"', "
-                + "'" + firstName + "', '" + lastName + "', '" + address + "', '" + phone + "', "
-                + "'" + deliveryMethod + "', current_date, " + orderCost + ")";
 
         
         
         
         for (int i = 0; i < cart.getBookCount(); i++) {
-            String orderItemsQuery = "INSERT INTO ORDERITEMS VALUES ("
-                    + "currval('order_numbers'), '" + cart.getBookAt(i).getIsbn() + "', "
-                    + cart.getBookAt(i).getQuantity() + ""
-                    + ")";
             
             
         }
