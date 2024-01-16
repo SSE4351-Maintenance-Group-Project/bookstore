@@ -27,7 +27,11 @@ public class CategorizeController extends HttpServlet {
             // Set categorizedBooks attribute to provide books of a category.
             request.getSession().setAttribute("categorizedBooks", categorizedBooks);
             response.sendRedirect(request.getContextPath() + "/categorized_books.jsp?category=" + category);
-        } catch (Exception e) {}
+        } catch (Exception e) {
+            e.printStackTrace(); 
+            
+            request.setAttribute("error", "An error occurred while processing your request.");
+            request.getRequestDispatcher("/error.jsp").forward(request, response);}
 
     }
     
