@@ -9,10 +9,6 @@ package store;
  * @version 1.0
  */
 public class CommonTags {
-    /**
-     * Common tags constructor 
-    */
-    public CommonTags() {}
     
     /**
     * getHeader returns the string of HTML for the common store header.
