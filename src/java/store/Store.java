@@ -149,9 +149,11 @@ public class Store {
             throws Exception {
         
         String categories = "";
-        String query = "SELECT category_name FROM BOOKCATEGORIES WHERE isbn = '" + isbn + "'";
+        String query = "SELECT category_name FROM BOOKCATEGORIES WHERE isbn = '" + isbn + "'"; //maintained by yus
         ResultSet result = myConnection.runQuery(query);
-        ResultSet count = myConnection.runQuery("SELECT COUNT(isbn) AS num FROM BOOKCATEGORIES WHERE isbn ='" + isbn + "'");
+        String countQuery = "SELECT COUNT(isbn) AS num FROM BOOKCATEGORIES WHERE isbn ='" + isbn + "'";
+        ResultSet countResult = myConnection.runQuery(countQuery); //end
+
         count.next();
         int num = count.getInt("num");
         count.close();
